@@ -1,0 +1,1856 @@
+
+> alienv enter O2/latest-dev-o2
+
+protobuf/v3.0.2-1(12):ERROR:105: Unable to locate a modulefile for 'Ppconsul/-'
+protobuf/v3.0.2-1(12):ERROR:105: Unable to locate a modulefile for 'Ppconsul/-'
+Currently Loaded Modulefiles:
+  1) BASE/1.0                                   14) lhapdf/v6.1.6-1
+  2) GCC-Toolchain/v6.2.0-alice1-1              15) pythia/v8230-1
+  3) Python-modules/1.0-1                       16) ZeroMQ/v4.1.5-1
+  4) lzma/v5.2.3-1                              17) nanomsg/v1.0.0+git_c52f1bedca-1
+  5) ROOT/v6-10-08-1                            18) DDS/1.7-1
+  6) GEANT3/v2-5-1                              19) FairRoot/alice-dev-20180110-1
+  7) GEANT4/v10.3.3-1                           20) Vc/1.3.2-1
+  8) vgm/v4-4-1                                 21) HepMC3/3.0.0-1
+  9) GEANT4_VMC/v3-5-1                          22) O2HLTCATracking/hlt_o2_ca_tracking-v1.5-1
+ 10) protobuf/v3.0.2-1                          23) Common-O2/v1.2.3-1
+ 11) pythia6/428-alice1-1                       24) Configuration/v1.2.2-1
+ 12) boost/v1.64.0-alice1-1                     25) Monitoring/v1.3.0-1
+ 13) yaml-cpp/v0.5.2-1                          26) O2/latest-dev-o2
+Use alienv list to list loaded modules. Use exit to exit this environment.
+
+
+====================================================================
+
+Now testing the macros and chain:
+
+1) 1) simulation:
+
+10 events each with 100 muons using GEANT3 as transport engine:
+
+./run_sim_mft.sh 10 100 TGeant3
+
+
+=====================================================
+
+
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.10/08                http://root.cern.ch |
+  |                               (c) 1995-2017, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag v6-10-08, 16 October 2017                         |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+
+
+Macro finished succesfully.
+
+Processing SetIncludePath.C...
+Added 
+ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/ITS/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/Passive/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/ITS/simulation/inclu -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/TPC/simulation/include/  -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/TPC/simulation/include/  -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/TPC/simulation/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/Base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Common/Field/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Common/MathUtils/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/ITS/reconstruction/i -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/simulation/in -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/simulation/in -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/simulation/in -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/simulation/inclu -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/reconstruction/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/reconstruction/include/
+ to include paths
+Processing run_sim_mft.C++(10,100,"TGeant3")...
+Run simulations: 10 ev 100 mu TGeant3 
+[INFO   ] FairRootManager::OpenOutFile("AliceO2_TGeant3.mc_10ev_100mu.root")
+[INFO   ] Media file used: /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/Geometry/media.geo
+[INFO   ] Maximim possible beam energy for requested beam is assumed 
+[INFO   ] field: 
+[INFO   ] Solenoid (+1.00*)5 kG, Dipole ON (+1.00)  
+[INFO   ] Machine B fields for p-p beam (7000 GeV): QGrad: 22.0002 Dipole: 37.8781 
+[INFO   ] Uses Sol30_Dip6_Hole of /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Common/maps/mfchebKGI_sym.root 
+[INFO   ] ==============  FairRunSim: Initialising simulation run ==============
+[INFO   ] FairGeoMedia: Read media 
+
+************************************************************* 
+     initialisation for run id 1519281251
+************************************************************* 
+[INFO   ] Creating mag.field container MagFieldParam 
+[INFO   ] -------------- Standard Config is called ------------------------------------
+[INFO   ] ---User path for Configuration (g3libs.C) is used: /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/gconfig
+[INFO   ] ---User path for Configuration (g3Config.C) is used: /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/gconfig
+[INFO   ] ---User path for Cuts and Processes (SetCuts.C) is used: /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/gconfig
+Loading Geant3 libraries ...
+Loading Geant3 libraries ... finished
+-I- G3Config: Geant3 with TGeo has been created.
+SetCuts Macro: Setting Processes..
+SetCuts Macro: Setting cuts..
+Materials for key CAVE
+internal id 2 to 1
+[INFO   ] Detector::createMaterials >>>>> fieldType 2 maxField 15
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+internal id 15 to 16
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+internal id 15 to 16
+internal id 16 to 17
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+internal id 15 to 16
+internal id 16 to 17
+internal id 17 to 18
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+internal id 15 to 16
+internal id 16 to 17
+internal id 17 to 18
+internal id 18 to 19
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+internal id 15 to 16
+internal id 16 to 17
+internal id 17 to 18
+internal id 18 to 19
+internal id 19 to 20
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+internal id 15 to 16
+internal id 16 to 17
+internal id 17 to 18
+internal id 18 to 19
+internal id 19 to 20
+internal id 20 to 21
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+internal id 15 to 16
+internal id 16 to 17
+internal id 17 to 18
+internal id 18 to 19
+internal id 19 to 20
+internal id 20 to 21
+internal id 21 to 22
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+internal id 15 to 16
+internal id 16 to 17
+internal id 17 to 18
+internal id 18 to 19
+internal id 19 to 20
+internal id 20 to 21
+internal id 21 to 22
+internal id 22 to 23
+Materials for key CAVE
+internal id 2 to 1
+Materials for key MFT
+internal id 1 to 2
+internal id 2 to 3
+internal id 3 to 4
+internal id 4 to 5
+internal id 5 to 6
+internal id 6 to 7
+internal id 7 to 8
+internal id 8 to 9
+internal id 9 to 10
+internal id 10 to 11
+internal id 11 to 12
+internal id 12 to 13
+internal id 13 to 14
+internal id 14 to 15
+internal id 15 to 16
+internal id 16 to 17
+internal id 17 to 18
+internal id 18 to 19
+internal id 19 to 20
+internal id 20 to 21
+internal id 21 to 22
+internal id 22 to 23
+internal id 23 to 24
+Detector::createMaterials -----> matId = 23
+GeometryBuilder::buildGeometry volume name = MFT
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk0 bottom
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk1 bottom
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk2 bottom
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk3 bottom
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk4 bottom
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk0 top
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk1 top
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk2 top
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk3 top
+Rohacell thickness 0.560000 
+Creating MFT heat exchanger for disk4 top
+[INFO   ] FairMCApplication::InitGeometry: 0
+[INFO   ] Total number of sensors 920 in 2 detector halves
+[INFO   ] Simulation RunID: 1519281251
+[INFO   ] Creating branch for std::vector<o2::MCTrackT<float>, std::allocator<o2::MCTrackT<float> > > with address 0x80a0cb0
+Creating branch for std::vector<o2::ITSMFT::Hit, std::allocator<o2::ITSMFT::Hit> > with address 0x6fc3f18
+Monte Carlo Engine Initialisation with: TGeant3TGeo
+[INFO   ] ***  FairBaseParSet written to ROOT file   version: 2  
+[INFO   ] ***  FairGeoParSet written to ROOT file   version: 2  
+[INFO   ] ***  MagFieldParam written to ROOT file   version: 2  
+--------------------------------------------------------------------------------
+--------------  actual containers in runtime database  -------------------------
+FairBaseParSet                                 class for parameter io
+FairGeoParSet                                  class for Geo parameter
+MagFieldParam                                  Mag. Field Parameters
+--------------  runs, versions  ------------------------------------------------
+run id
+  container                                        1st-inp    2nd-inp    output
+run: 1519281251
+  FairBaseParSet                                1519281251         -1          2
+  FairGeoParSet                                 1519281251         -1          2
+  MagFieldParam                                         -1         -1          2
+--------------  input/output  --------------------------------------------------
+first input: none
+second input: none
+output:
+OBJ: FairParRootFile	AliceO2_TGeant3.params_10ev_100mu.root	 : 0 at: 0xadcc1c0
+Root file I/O AliceO2_TGeant3.params_10ev_100mu.root is open
+detector I/Os:  FairGenericParIo
+BoxGen: kf=13, p=(0.74, -0.56, -8.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.63, 1.86, -16.16) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.53, 1.10, -14.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.05, 1.05, -8.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.82, 1.15, -14.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.38, 1.04, -8.37) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.88, 0.63, -13.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.75, 0.03, -11.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.16, -1.15, -10.86) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.41, -0.54, -11.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.32, -0.12, -4.14) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.76, -1.18, -9.77) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.35, -1.36, -16.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.50, 0.67, -13.72) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.78, 0.12, -10.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.54, 0.51, -7.26) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.82, 2.18, -17.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.42, -0.45, -5.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.14, 0.47, -7.40) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.77, 0.31, -5.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.30, 0.03, -4.38) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.44, 1.00, -7.94) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.96, 0.15, -10.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.14, 0.88, -13.73) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.38, -0.37, -9.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.86, -2.65, -19.27) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.45, -0.38, -6.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.11, -0.93, -9.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.39, -0.72, -16.80) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.11, -1.66, -19.40) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.32, -2.16, -14.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.87, 0.25, -18.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.29, -1.26, -18.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.04, -0.65, -12.35) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.53, 0.72, -14.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.05, -0.49, -4.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.25, 0.79, -13.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.78, 1.10, -10.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.21, 1.20, -15.37) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.48, 1.20, -16.52) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.71, -1.07, -15.76) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.65, 0.50, -4.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.94, 0.18, -8.71) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.60, -0.67, -6.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.29, -1.16, -17.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.52, 1.79, -17.87) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.23, -0.42, -5.89) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.90, -0.50, -7.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.36, -0.06, -11.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.98, 0.36, -13.08) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.31, -0.34, -5.42) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.27, 1.47, -9.90) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.04, -0.77, -6.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.02, -0.64, -8.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.52, 1.69, -12.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.14, 0.89, -5.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.68, -0.63, -16.93) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.31, 1.24, -13.95) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.11, 0.70, -5.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.73, 0.59, -10.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.64, 0.42, -8.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.30, -1.81, -13.95) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.83, 0.73, -17.95) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.88, -1.48, -12.16) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.10, -0.75, -9.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.27, -1.36, -17.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.57, -0.18, -6.08) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.95, 1.38, -16.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.21, 1.07, -15.22) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.33, -0.45, -7.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.20, 1.76, -16.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.94, 0.30, -10.87) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.51, -0.22, -9.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.18, 1.52, -17.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.56, -1.14, -16.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.15, -0.47, -4.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.05, 0.27, -4.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.23, 0.18, -15.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.06, -0.61, -16.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.96, 0.17, -16.86) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.13, -0.39, -13.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.07, -0.30, -13.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.60, -1.35, -13.90) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.14, -0.73, -9.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.00, -0.19, -10.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.56, -1.15, -14.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.16, 0.28, -6.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.11, 0.49, -4.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.70, 0.33, -9.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.19, -1.47, -18.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.13, -1.37, -8.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.20, 0.65, -5.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.53, 1.41, -13.94) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.96, 0.11, -14.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.23, -1.83, -11.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.52, -0.44, -6.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.32, 2.45, -14.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.81, -1.32, -16.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.25, 1.08, -10.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.52, 1.44, -10.47) GeV, x=(0.0, 0.0, 0.0) cm
+[INFO   ] Stack: 100 out of 100 stored 
+Found nonconforming detector
+BoxGen: kf=13, p=(-0.34, -1.80, -19.35) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.49, 0.33, -4.38) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.27, -0.39, -8.96) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.38, -0.86, -9.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.05, -0.05, -12.90) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.50, -0.85, -18.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.10, 1.38, -10.50) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.28, 0.76, -16.62) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.43, -0.23, -6.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.66, 0.10, -5.08) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.79, -2.33, -19.38) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.19, 0.26, -14.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.21, -0.64, -9.68) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.98, -0.90, -9.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.65, 1.90, -13.90) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.02, -0.50, -11.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.40, -1.88, -11.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.41, -0.95, -10.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.96, -0.17, -14.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.29, -0.64, -14.23) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.34, 0.64, -10.59) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.37, -1.61, -13.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.04, 1.97, -16.75) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.30, -0.66, -12.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.14, 0.68, -9.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.76, -0.96, -10.94) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.55, 0.22, -7.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.39, 0.42, -12.88) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.65, 0.53, -12.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.40, 0.18, -5.87) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.03, -0.39, -5.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.02, 0.85, -7.49) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.82, 2.54, -18.79) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.95, 0.34, -9.50) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.57, -0.06, -9.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.10, 1.45, -13.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.46, -0.16, -7.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.82, 0.47, -12.73) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.45, -1.42, -8.76) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.19, 0.79, -18.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.87, -0.40, -10.71) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.12, -0.58, -16.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.85, 0.36, -13.70) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.55, -1.20, -18.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.71, 1.25, -14.19) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.56, 1.00, -12.75) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.72, 2.00, -19.64) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.22, 0.73, -11.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.81, 2.37, -17.59) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, -0.18, -7.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.40, 0.25, -19.19) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.01, -2.03, -19.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.45, 0.70, -16.71) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.24, -0.97, -12.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.02, -0.87, -5.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.97, 0.14, -11.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.45, -0.47, -8.22) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.35, 0.42, -4.90) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.22, -0.06, -11.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.02, 0.26, -4.48) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.06, -1.69, -14.77) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.15, -0.37, -17.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.03, 1.01, -19.48) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.25, -0.33, -4.50) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.25, 0.67, -4.86) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.66, -1.79, -12.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.07, 0.65, -8.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.03, -0.61, -12.75) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.95, 0.65, -17.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.60, -0.07, -13.79) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.58, -1.23, -11.50) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.24, 0.44, -4.96) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.12, 1.99, -16.63) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.10, -0.89, -8.19) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.59, -1.08, -19.72) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.41, -0.29, -4.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.53, 0.57, -9.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.57, 0.32, -12.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.02, -0.66, -8.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.47, 1.79, -13.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.43, 1.78, -17.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.96, 2.30, -18.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.20, 0.37, -11.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.21, 1.76, -13.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.92, 0.65, -12.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.10, -1.72, -13.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.07, -0.38, -6.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.42, 0.58, -10.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.66, 0.05, -9.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.51, -1.87, -11.35) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.94, -1.30, -11.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.29, -0.65, -5.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.53, 0.50, -9.63) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.43, -0.13, -5.79) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.81, 0.27, -11.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.13, -0.90, -6.37) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.76, 0.48, -6.40) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.39, 0.49, -4.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.38, -2.16, -15.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.05, 1.30, -11.04) GeV, x=(0.0, 0.0, 0.0) cm
+[INFO   ] Stack: 100 out of 100 stored 
+BoxGen: kf=13, p=(-1.40, -2.26, -17.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.01, -0.68, -7.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.68, -0.54, -8.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.56, -0.09, -8.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.28, 0.46, -8.16) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.38, -1.11, -16.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.17, 0.17, -16.35) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.83, 1.46, -19.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.14, 2.27, -13.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.70, -0.87, -14.08) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.86, -1.56, -15.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.01, 0.44, -13.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.51, -0.43, -13.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.26, -0.24, -6.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.28, 1.55, -16.16) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.43, -1.58, -11.81) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.84, -1.58, -18.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.35, -0.41, -7.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.23, 0.89, -15.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.66, -1.55, -17.93) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.13, 0.46, -5.68) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.26, 2.11, -13.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.31, 0.32, -6.37) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.01, -0.74, -10.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.21, 0.70, -16.75) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.33, -1.09, -10.62) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.24, 0.83, -9.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.99, -0.72, -9.60) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.08, -0.74, -11.94) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.60, -1.43, -17.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.48, 1.18, -10.98) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.00, 0.58, -18.96) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.17, 0.72, -5.98) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.02, 1.11, -14.75) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.38, 0.23, -6.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.84, -1.99, -15.87) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.46, 0.08, -6.92) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.17, -1.26, -8.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.07, 0.42, -5.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.00, -1.49, -19.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.03, -0.22, -13.14) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.62, -0.85, -15.13) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.11, 0.67, -7.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.59, 2.11, -15.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.31, -0.42, -17.42) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.05, -1.14, -7.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.93, 0.23, -9.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.84, 0.89, -11.38) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.00, 2.59, -16.98) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.65, -0.21, -11.27) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.01, -0.83, -5.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.58, -0.50, -8.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.93, 1.52, -19.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.30, 2.11, -17.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.56, -1.96, -11.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.03, 0.51, -5.64) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.51, -0.33, -10.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.66, 1.34, -11.81) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, 0.41, -5.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.02, 0.16, -12.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.60, -0.23, -6.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.07, -0.94, -13.73) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.51, -0.83, -12.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.56, 0.50, -5.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.52, 0.46, -13.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.91, 0.04, -8.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.35, -0.34, -7.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.26, 0.54, -5.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.03, -0.70, -6.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.12, -0.55, -4.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.58, -0.30, -8.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.86, -0.27, -16.23) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.82, -1.09, -15.13) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.51, -0.37, -4.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.19, -0.88, -9.04) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.09, -0.98, -13.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.08, 0.58, -7.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.13, 0.43, -4.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.31, 2.38, -18.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.35, -0.76, -8.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.14, 0.59, -13.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.37, -0.78, -5.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.31, 1.29, -14.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.31, -0.13, -4.93) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.96, 0.19, -14.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.21, -0.30, -16.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.12, -0.75, -4.93) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.08, 0.45, -9.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.55, 0.45, -19.87) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.27, 0.63, -10.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.05, 0.23, -10.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.61, -0.54, -8.59) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.27, -0.67, -18.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.43, -1.79, -18.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.97, 0.06, -8.90) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.35, -1.21, -15.75) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.38, 0.04, -15.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.28, -1.39, -19.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.66, -0.07, -5.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.40, 1.36, -18.55) GeV, x=(0.0, 0.0, 0.0) cm
+Stack: 100 out of 100 stored 
+BoxGen: kf=13, p=(0.23, 2.40, -17.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.01, -1.27, -13.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.67, 0.77, -14.63) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.71, -1.08, -11.22) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.70, 0.64, -14.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.47, -1.02, -16.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.97, 0.70, -7.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.62, -0.21, -6.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.81, -0.21, -8.59) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.34, 1.93, -18.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.85, 0.09, -10.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.39, 0.51, -4.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.06, -0.31, -9.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.60, 0.59, -7.23) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.74, 0.76, -13.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.48, -1.11, -11.89) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.49, 0.23, -4.95) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.99, -0.17, -7.45) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.11, 1.34, -9.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.47, 1.30, -18.49) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.49, -0.16, -4.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.20, -0.40, -17.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.86, 1.53, -17.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.58, -1.66, -17.42) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.12, -0.82, -8.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.70, 0.46, -10.92) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.60, -0.59, -9.68) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.44, -2.67, -17.52) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.41, -1.25, -7.92) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.85, 0.95, -15.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.86, 0.87, -13.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.37, -0.21, -4.93) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.34, 0.72, -12.93) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.48, 0.52, -6.68) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.89, -1.55, -17.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.15, -0.68, -8.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.52, -0.24, -4.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.20, -2.24, -19.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.63, 0.29, -6.04) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.50, -0.18, -6.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.63, -0.80, -7.49) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.98, -0.20, -13.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.54, -2.39, -17.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.82, -2.06, -16.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.85, -0.98, -13.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.95, -0.38, -11.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.34, -0.04, -4.89) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.02, -1.34, -10.35) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.37, -0.42, -4.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.02, -0.73, -6.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.80, -0.23, -10.80) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.18, -1.94, -17.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.59, 0.34, -8.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.39, 0.32, -19.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, 0.97, -6.60) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.36, 0.54, -10.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.82, -0.15, -7.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.45, 0.29, -7.40) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.51, -0.11, -6.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.10, 1.38, -8.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.42, 1.06, -15.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.43, -0.15, -4.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.75, 1.93, -17.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.93, 0.34, -17.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.83, -0.22, -5.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.40, -2.04, -19.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.20, -0.67, -6.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.48, 0.34, -4.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.89, 2.14, -19.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.18, -1.36, -18.96) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.40, -0.05, -4.26) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.00, 1.17, -10.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.56, 1.68, -19.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.35, 0.45, -4.71) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.41, 0.18, -5.33) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, 0.77, -8.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.42, -0.47, -5.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.32, 0.22, -19.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.80, 1.58, -10.77) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.42, -1.37, -18.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.12, -0.36, -10.95) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.48, 0.63, -5.16) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.09, -0.46, -14.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.88, -1.26, -18.45) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.09, 0.59, -19.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.37, -0.83, -9.77) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.62, -0.33, -18.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.13, -1.14, -11.68) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.54, -0.38, -9.08) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.15, -1.18, -16.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.11, -0.49, -6.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.26, 2.34, -15.95) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.34, -1.12, -14.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, 0.35, -4.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.56, 1.51, -13.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.05, 1.91, -17.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.66, -0.42, -10.22) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.85, 0.83, -15.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.62, -2.45, -14.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.48, -1.09, -10.85) GeV, x=(0.0, 0.0, 0.0) cm
+Stack: 100 out of 100 stored 
+BoxGen: kf=13, p=(0.01, -1.30, -9.88) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.88, 0.76, -14.49) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.57, -1.14, -14.98) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.52, 0.94, -15.89) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.54, 0.04, -15.48) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.48, 0.58, -4.80) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.30, -0.99, -11.50) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.90, -0.53, -14.13) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.69, 0.82, -16.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.43, -1.39, -13.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.59, 1.02, -15.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.90, -1.98, -14.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.59, 0.86, -11.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.98, -1.64, -12.08) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.99, 0.29, -6.19) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.23, -1.33, -17.75) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.67, 1.05, -12.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.46, 0.58, -12.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.76, 0.09, -13.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.96, 0.49, -11.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.27, 1.02, -8.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.08, 0.81, -6.42) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.07, -1.45, -13.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.05, -0.48, -8.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.02, -0.99, -8.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.19, -1.33, -18.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.68, -1.17, -16.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.50, 0.25, -5.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.29, -0.55, -8.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.08, 2.51, -18.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.71, -1.31, -19.14) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.10, 0.68, -8.38) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.11, -0.66, -12.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.55, -0.21, -17.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.01, 0.28, -10.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.71, 0.53, -11.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.96, 0.17, -5.73) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.16, -1.07, -7.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.37, 0.50, -8.68) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.79, -0.08, -9.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.64, -1.05, -17.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.27, -0.55, -5.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.64, -0.40, -5.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.11, -1.30, -10.26) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.18, -0.42, -7.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.16, -1.15, -19.80) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.46, 0.18, -5.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.52, 0.14, -5.93) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.08, -0.50, -4.92) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.02, -0.41, -6.88) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.83, 0.98, -7.96) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.91, 0.84, -19.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.17, -0.87, -5.08) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.11, 0.86, -11.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.70, -1.40, -17.88) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.06, -1.91, -17.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.70, 0.60, -13.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.94, 0.58, -13.37) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.29, -0.51, -4.26) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.79, -1.47, -14.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.81, -0.68, -11.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.07, -0.23, -15.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.33, 1.18, -15.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.06, -0.78, -10.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.31, -1.93, -19.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.63, 0.07, -4.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.50, 0.46, -11.86) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.21, -0.48, -5.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.44, -2.87, -16.92) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.41, 0.86, -8.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.14, 1.04, -11.40) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.24, -0.29, -14.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.82, -0.30, -14.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.49, -1.19, -13.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.34, -0.34, -8.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.69, 1.43, -12.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.26, 0.43, -5.41) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.07, -0.79, -8.90) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.15, -0.14, -10.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.99, -0.21, -12.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.61, -0.80, -7.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.93, -0.09, -16.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.73, 0.45, -5.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.10, -1.52, -16.64) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.66, -0.32, -8.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.42, -1.71, -15.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.56, 1.07, -10.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.00, 1.29, -16.90) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.74, -1.43, -15.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.03, -2.01, -13.60) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.49, -0.15, -7.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.92, -0.73, -17.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.55, 0.77, -16.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.40, 0.41, -8.76) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.71, 0.14, -8.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.04, 0.50, -5.50) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.88, -0.95, -16.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.33, -0.19, -6.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.39, 0.62, -4.41) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.22, -0.25, -8.52) GeV, x=(0.0, 0.0, 0.0) cm
+Stack: 100 out of 100 stored 
+BoxGen: kf=13, p=(-0.42, -0.54, -6.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.24, -0.69, -4.40) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.26, -1.95, -18.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.08, 1.11, -10.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.31, 0.75, -8.81) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.17, 2.24, -18.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.71, 1.08, -12.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.27, 0.17, -18.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.38, -0.17, -10.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.01, 1.09, -6.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.90, -1.47, -11.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.89, 0.64, -8.37) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.21, -0.99, -19.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.51, -1.02, -15.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.01, -1.57, -14.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.61, 0.34, -8.86) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.07, -1.19, -18.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.82, -0.32, -12.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.97, 0.74, -11.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.39, 0.61, -11.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.28, 1.67, -16.48) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.45, 0.50, -11.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.72, 0.48, -5.81) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.50, 1.46, -12.14) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.73, -1.19, -9.40) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.10, 0.53, -4.08) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.77, -0.32, -14.37) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.04, -0.68, -10.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.32, -0.13, -9.70) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.54, -1.63, -17.13) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.82, -0.39, -7.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.31, -0.42, -6.72) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.98, 1.41, -12.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.28, 0.25, -5.77) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.23, -1.19, -7.62) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.01, 1.03, -13.73) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.39, -0.62, -11.70) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.93, 0.21, -9.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.14, -0.69, -12.04) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.15, -1.18, -17.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.78, -0.52, -12.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.79, 1.25, -8.79) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.17, -1.57, -11.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.45, 1.47, -18.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.82, 0.50, -12.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.46, -0.91, -15.49) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.80, 0.05, -5.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.35, -0.74, -15.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.27, 1.93, -17.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.97, -0.02, -13.89) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.29, -0.74, -7.71) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.38, 0.44, -4.77) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.25, 1.26, -11.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.11, -1.65, -13.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.35, 1.01, -18.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.18, 0.10, -19.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.35, 2.81, -17.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.65, 2.68, -17.48) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.11, -0.50, -4.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.28, -0.59, -9.52) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, -0.13, -11.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.88, -0.59, -12.27) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.72, 0.48, -5.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.63, 0.36, -11.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.56, 0.76, -10.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.73, -0.09, -14.71) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.33, 1.14, -10.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.05, 0.59, -6.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.35, 1.04, -10.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.22, -0.97, -17.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.55, 0.38, -5.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.38, -0.80, -15.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.04, -0.97, -14.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.36, 0.27, -6.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.78, -2.28, -18.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.50, 0.85, -16.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.84, 0.62, -13.76) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.74, -1.37, -15.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.12, -0.64, -10.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.20, 1.24, -12.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.03, -0.25, -7.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.00, 1.52, -17.35) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.41, -0.01, -6.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.32, -0.20, -12.33) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.40, 1.20, -7.49) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.84, -0.35, -5.62) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.07, 1.68, -18.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.40, 0.02, -5.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.79, -0.91, -13.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.49, 0.01, -12.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.45, -0.42, -7.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.21, -0.26, -4.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.76, -1.14, -13.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.68, 0.74, -12.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.60, -0.22, -9.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.70, 0.96, -10.89) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.34, 0.57, -9.77) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.22, -0.45, -14.41) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.87, -1.53, -17.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.19, -0.41, -6.46) GeV, x=(0.0, 0.0, 0.0) cm
+Stack: 100 out of 100 stored 
+BoxGen: kf=13, p=(-0.01, 1.14, -8.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.72, 0.58, -10.23) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.52, 0.85, -5.70) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.01, -0.81, -6.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.27, 1.83, -13.96) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.29, -0.88, -6.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.36, 2.22, -15.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.50, -1.49, -13.68) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.79, 0.64, -12.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.94, -1.81, -15.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.75, 1.24, -10.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.39, -1.35, -12.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.47, 0.36, -7.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.84, 0.87, -7.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.40, -0.81, -8.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.27, 0.57, -8.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.11, -0.01, -13.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.67, 0.42, -8.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.26, -0.54, -16.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.94, 1.41, -12.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.08, -0.25, -14.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.33, -0.09, -4.45) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.26, -1.24, -12.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.04, -1.15, -12.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.23, -1.35, -16.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.00, -0.49, -6.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.86, 1.35, -18.87) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.64, 0.71, -16.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.78, -0.88, -15.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.17, -0.20, -4.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.56, 0.49, -6.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.02, -0.42, -5.62) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.26, -0.23, -16.35) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.76, 1.53, -13.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.68, 0.36, -5.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.92, 0.80, -10.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.41, -2.62, -18.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.65, 0.55, -9.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.77, -0.61, -6.80) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.43, 1.70, -12.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.76, -1.36, -9.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.23, 0.76, -16.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.39, 1.35, -12.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.89, 1.35, -18.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.00, -1.28, -19.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.85, -0.63, -8.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.03, -0.60, -8.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.73, -0.04, -7.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.17, -2.13, -14.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.02, 0.54, -7.16) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.52, -0.28, -17.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.94, -0.78, -10.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.08, -0.39, -7.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.85, 1.78, -14.59) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.17, -0.67, -18.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.08, 0.22, -4.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.33, -0.13, -10.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.13, 0.72, -11.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.42, -0.82, -16.38) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.43, -0.58, -7.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.65, -0.53, -5.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.27, 1.59, -10.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.20, 0.07, -12.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.63, -0.89, -18.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.11, 0.20, -15.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.12, 1.31, -12.50) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.75, -0.24, -9.64) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.05, 1.82, -14.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.56, 0.82, -8.64) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.11, -0.75, -6.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.73, -0.70, -9.79) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.28, -1.34, -19.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.05, 0.57, -16.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.05, -1.43, -16.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.44, -1.74, -13.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.94, -1.28, -11.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.35, 0.34, -6.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.51, -0.44, -8.04) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.62, -0.93, -13.63) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.59, -0.20, -4.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.11, 1.80, -18.98) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.13, 1.92, -15.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.64, 1.99, -18.76) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.42, -0.62, -4.87) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.10, -0.37, -6.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.53, -1.70, -14.90) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.21, 1.74, -10.27) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.89, 0.28, -6.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.53, -0.51, -14.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.34, 1.81, -17.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.26, -1.94, -15.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.51, -1.02, -14.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.06, 0.94, -13.88) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.04, -0.37, -17.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.25, 0.88, -12.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.65, 0.93, -7.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.49, 0.77, -6.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.21, 0.39, -5.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.30, -1.72, -11.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.24, 2.43, -15.88) GeV, x=(0.0, 0.0, 0.0) cm
+Stack: 100 out of 100 stored 
+BoxGen: kf=13, p=(-0.34, 0.09, -4.41) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.84, 0.62, -11.22) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.44, -0.11, -5.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, -0.06, -4.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.43, -1.28, -9.72) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.54, -0.43, -7.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.85, 1.13, -16.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.28, -0.60, -5.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.56, -0.45, -8.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.76, -0.41, -8.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.01, -1.05, -15.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.15, 0.59, -8.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.04, 0.17, -16.68) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.01, 0.69, -13.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.32, -0.09, -19.41) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.95, -0.42, -17.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.64, -0.03, -7.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.85, 0.58, -14.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.12, -0.44, -5.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.07, -0.30, -15.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.50, 2.73, -16.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.06, -0.70, -12.51) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.49, 0.88, -11.71) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.10, 0.43, -13.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.10, 0.26, -18.40) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.50, -1.96, -17.06) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.46, -1.41, -13.14) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.33, -1.21, -15.13) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.79, -1.43, -11.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.66, 1.75, -19.71) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.38, 0.79, -10.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.39, -1.17, -7.73) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.17, -1.64, -18.33) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.59, 0.43, -11.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.84, -0.44, -7.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.79, 0.72, -17.45) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.30, -0.79, -18.76) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.57, -0.90, -16.12) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.29, -0.45, -7.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.00, 0.38, -14.71) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.08, 1.16, -19.73) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.23, 0.96, -9.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.66, -1.61, -12.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.15, 0.34, -15.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.81, -1.84, -19.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.50, -0.47, -4.23) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, 1.81, -12.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.70, -0.42, -14.98) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.73, 0.61, -17.49) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.43, 1.74, -13.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.73, 1.76, -19.52) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.89, -1.21, -17.22) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.94, -0.46, -8.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.39, 0.85, -6.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.74, -1.48, -10.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.09, 0.39, -7.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.90, -1.41, -12.19) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.38, 0.29, -15.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.72, -1.69, -19.20) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.19, 0.99, -14.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.27, -0.26, -4.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.18, -1.23, -7.41) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.91, -0.37, -7.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.08, -0.93, -8.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.43, -1.96, -12.49) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.57, -0.65, -13.72) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.69, 0.47, -7.40) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.11, 1.96, -12.80) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.43, 1.26, -16.13) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.51, 2.13, -14.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.89, -0.81, -17.72) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.17, -0.54, -16.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.28, -1.58, -18.37) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.63, -1.34, -19.14) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.12, -0.32, -15.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.42, 1.32, -13.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.13, -0.34, -7.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.42, -0.27, -8.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.01, -2.54, -17.84) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.85, 0.97, -15.59) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.06, 0.55, -12.59) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.22, 3.00, -19.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.68, -0.00, -4.70) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.52, 0.84, -8.56) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.99, -0.13, -12.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.11, -0.11, -9.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.17, 1.07, -11.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.13, -0.34, -4.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.52, 1.19, -11.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.42, -0.09, -4.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.31, -0.20, -11.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.40, -0.32, -8.42) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.61, 2.24, -17.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.01, -2.35, -16.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.56, 0.04, -5.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.57, 1.74, -13.77) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.77, -0.85, -14.75) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.65, 0.42, -15.28) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.04, -0.52, -9.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.08, 1.33, -16.14) GeV, x=(0.0, 0.0, 0.0) cm
+Stack: 100 out of 100 stored 
+BoxGen: kf=13, p=(0.21, -1.31, -16.72) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.61, 1.89, -11.43) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.54, 0.20, -4.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.69, 0.65, -5.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.59, 0.30, -4.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.22, -1.19, -8.59) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.71, 0.18, -12.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.63, 0.80, -12.41) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.13, -0.87, -12.79) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.12, 0.90, -15.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.94, -1.50, -19.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.20, 2.76, -16.27) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.27, -0.60, -3.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.60, 1.56, -18.14) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, 0.79, -17.42) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, 1.30, -9.01) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.54, -0.27, -8.49) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.65, 0.61, -8.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.79, 0.46, -9.42) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.85, -0.80, -10.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.99, 2.20, -13.87) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.62, 0.12, -7.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.84, -3.09, -18.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.02, 0.67, -10.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.57, 0.51, -5.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.47, -0.81, -11.60) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.02, -0.16, -10.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.29, -0.31, -7.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.64, -2.03, -17.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.42, 0.52, -5.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.74, 0.87, -8.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.70, -0.96, -7.19) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.34, 1.04, -14.16) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.68, 1.30, -14.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.55, -0.11, -6.64) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.64, 0.97, -7.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.47, 2.13, -16.74) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.39, -1.36, -16.96) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.20, -1.22, -19.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.86, -0.51, -18.38) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.51, -0.28, -8.38) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.71, -0.22, -10.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.21, 0.40, -16.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.30, -0.82, -10.37) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.16, 0.09, -18.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.24, -0.32, -7.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.35, -1.36, -15.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.95, -0.05, -6.00) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.84, 2.06, -13.69) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.37, -1.27, -12.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.05, 0.03, -18.80) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.19, 0.33, -5.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.62, -0.13, -11.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.54, -1.07, -11.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.64, -0.82, -11.86) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.73, -0.96, -14.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.17, 0.71, -8.87) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.64, -1.05, -15.52) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.11, -0.60, -13.04) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.50, -1.33, -17.88) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.34, 1.68, -13.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.59, 0.49, -13.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.41, 2.05, -15.23) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.73, -0.48, -8.52) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.54, -1.27, -16.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.40, 1.18, -15.64) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.79, 0.00, -7.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.93, -0.15, -6.98) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.28, 0.89, -9.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.05, 0.85, -5.81) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.30, -2.14, -12.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.70, -1.74, -18.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.62, -2.41, -17.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.37, -2.12, -13.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.26, 0.55, -6.22) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.19, -0.59, -19.60) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.04, 0.58, -4.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.83, 1.97, -14.57) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.94, 0.27, -9.45) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.30, -0.80, -9.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.36, -0.94, -18.76) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.12, -1.17, -16.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.93, 2.88, -17.24) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.09, 2.28, -16.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.77, -0.73, -12.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.42, -1.66, -14.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.91, -0.04, -7.07) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.84, -0.05, -10.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.32, -0.87, -15.33) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.22, 0.56, -10.64) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.21, -1.98, -19.65) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.46, 1.70, -13.86) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.50, -0.20, -4.94) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.12, 1.16, -12.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.68, 1.35, -10.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.35, -1.86, -16.23) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.71, -0.25, -19.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.08, 0.79, -12.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.20, 1.76, -12.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.80, 1.02, -8.85) GeV, x=(0.0, 0.0, 0.0) cm
+Stack: 100 out of 100 stored 
+BoxGen: kf=13, p=(-1.27, 0.95, -12.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.18, -0.44, -7.27) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.26, -0.80, -14.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.55, 0.62, -14.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.30, -0.34, -5.17) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.83, -0.86, -9.41) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.34, -1.27, -11.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.35, 0.46, -8.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.28, -2.04, -15.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.35, 0.38, -11.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.11, 1.68, -10.64) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.13, 0.79, -8.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.04, -0.46, -6.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.00, -0.08, -6.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.32, 0.60, -7.93) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.04, 0.40, -9.55) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.73, 0.51, -5.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.11, -0.95, -10.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.31, -1.54, -13.19) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.46, -1.52, -16.80) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.80, -0.11, -8.18) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.61, 0.82, -11.38) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.47, -0.42, -5.60) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.74, -0.49, -6.02) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.57, 0.51, -14.39) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.42, 0.52, -12.45) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.59, 1.25, -11.33) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.71, -0.29, -4.44) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.11, 1.12, -15.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.01, -2.19, -18.78) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.89, 0.05, -15.47) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.32, -0.88, -10.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.06, -0.58, -8.97) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.47, -0.36, -7.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.13, -2.36, -15.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.15, -1.40, -11.29) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.19, -0.22, -4.14) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.03, -1.83, -19.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.53, -2.07, -12.52) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.17, -1.11, -18.52) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.00, -0.45, -7.35) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.57, 0.24, -10.63) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.58, 0.65, -12.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.42, 0.40, -14.11) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.71, 2.04, -16.05) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.33, -0.49, -4.42) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.60, -1.47, -9.60) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.30, -1.21, -18.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.08, -0.22, -7.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.15, -1.16, -9.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.26, -0.66, -7.82) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.66, -0.71, -9.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.24, 0.13, -13.27) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.00, 1.22, -12.36) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.72, 0.58, -16.66) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.00, 0.55, -5.48) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.62, 1.79, -17.48) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.53, 0.58, -5.70) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.13, -1.44, -15.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.66, -0.62, -13.27) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.92, 1.78, -16.23) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.16, -1.72, -14.62) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.77, -1.40, -9.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.41, -0.48, -9.53) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.43, -0.30, -9.76) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.69, 0.04, -12.67) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.42, 0.54, -5.32) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.03, 0.35, -6.25) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.51, -0.49, -12.61) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.31, 1.60, -10.15) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.20, -2.07, -13.14) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.86, 1.71, -15.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.06, -0.53, -7.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.18, -0.69, -12.99) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.83, 0.73, -15.19) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.58, -1.03, -11.35) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.44, 0.21, -8.58) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.17, 2.34, -15.21) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.99, 0.08, -10.31) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.79, 0.27, -5.10) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.76, -1.36, -19.75) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-2.13, -1.18, -14.46) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.30, -0.33, -6.03) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.66, -1.68, -16.09) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.81, 0.13, -8.91) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.37, 2.52, -15.92) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.46, -0.25, -9.34) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(2.35, 0.10, -13.72) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.68, 1.77, -14.16) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.33, 0.87, -14.54) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.95, -0.74, -8.30) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.23, -0.97, -10.19) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.40, -0.59, -8.85) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.33, -2.28, -15.88) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-1.50, -1.12, -13.26) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.38, -1.99, -14.83) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.48, 0.05, -4.48) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(1.19, -2.53, -19.68) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(-0.48, 1.14, -19.89) GeV, x=(0.0, 0.0, 0.0) cm
+BoxGen: kf=13, p=(0.12, 2.30, -18.00) GeV, x=(0.0, 0.0, 0.0) cm
+Stack: 100 out of 100 stored 
+
+
+Macro finished succesfully.
+Output file is AliceO2_TGeant3.mc_10ev_100mu.root
+Parameter file is AliceO2_TGeant3.params_10ev_100mu.root
+Real time 5.24747 s, CPU time 4.8s
+
+
+ MZSTOR.  ZEBRA table base TAB(0) in /MZCC/ at adr   532537135    1FBDDF2F HEX
+
+ MZSTOR.  Initialize Store  0  in /GCBANK/
+          with Store/Table at absolute adrs   527091485   532537135
+                                        HEX    1F6AC71D    1FBDDF2F
+                                        HEX    FFACE5DA           0
+                              relative adrs    -5446182           0
+          with     1 Str. in     2 Links in   5300 Low words in 4999970 words.
+          This store has a fence of   16 words.
+
+ MZLOGL.  Set Log Level 0 for store  0
+1*****  GEANT Version  3.21/11 Released on 100298
+0*****  Correction Cradle Version  0.1100
+
+ MZDIV.   Initialize Division  Constant  in Store  0
+          NW/NWMAX=   20004000000,  MODE/KIND=  1  2
+          Division 20 initialized.
+
+ MZLINK.  Initialize Link Area  /GCLINK/  for Store  0 NL/NS=    20    20
+
+ MZLINK.  Initialize Link Area  /GCSLNK/  for Store  0 NL/NS=   100   100
+
+ Calculating cross section tables, see gphysi.dat for more information
+
+ Cross section calculation concluded successfully
+ **** GTRIGI: IEVENT=      1 IDEVT=      1 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+ **** GTRIGI: IEVENT=      2 IDEVT=      2 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+ **** GTRIGI: IEVENT=      3 IDEVT=      3 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+ **** GTRIGI: IEVENT=      4 IDEVT=      4 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+ **** GTRIGI: IEVENT=      5 IDEVT=      5 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+ **** GTRIGI: IEVENT=      6 IDEVT=      6 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+ **** GTRIGI: IEVENT=      7 IDEVT=      7 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+ **** GTRIGI: IEVENT=      8 IDEVT=      8 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+ **** GTRIGI: IEVENT=      9 IDEVT=      9 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+ **** GTRIGI: IEVENT=     10 IDEVT=     10 Random Seeds = 1683170660           0
+ GTREVE_ROOT : Transporting primary track No        100
+
+
+=====================================================
+Output ROOT/dat files:
+
+
+gphysi.dat
+AliceO2_TGeant3.mc_10ev_100mu.root
+geofile_mft.root
+AliceO2_TGeant3.params_10ev_100mu.root
+
+
+
+======================================================
+
+2) digitization:
+
+./run_digi_mft.sh 10 100 TGeant3 1 50.e3
+
+- the fourth parameter is "1=true" to use the ALPIDE digitization
+
+- the fifth parameter can be zero, which means the digitization is 
+done in "triggered" mode, when all digits are available at once, or 
+it can have a value in Hz (50.e3 = 50kHz) which means that the 
+digitization is done in continuous mode, per Read-Out frame at 50kHz 
+collision frequency
+
+===================================================================
+
+
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.10/08                http://root.cern.ch |
+  |                               (c) 1995-2017, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag v6-10-08, 16 October 2017                         |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+
+
+Macro finished succesfully.
+
+Processing SetIncludePath.C...
+Added 
+ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/ITS/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/Passive/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/ITS/simulation/inclu -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/TPC/simulation/include/  -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/TPC/simulation/include/  -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/TPC/simulation/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/Base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Common/Field/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Common/MathUtils/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/ITS/reconstruction/i -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/simulation/in -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/simulation/in -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/simulation/in -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/simulation/inclu -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/reconstruction/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/reconstruction/include/
+ to include paths
+Processing run_digi_mft.C++(10,100,"TGeant3",1,50.e3)...
+[INFO   ] FairRootManager::OpenOutFile("AliceO2_TGeant3.digi_10ev_100mu.root")
+[INFO   ] The input consists out of the following trees and files: 
+[INFO   ]  - o2sim
+[INFO   ]     - AliceO2_TGeant3.mc_10ev_100mu.root
+[INFO   ] Parameter and input file are available, Assure that basic info is there for the run!
+
+************************************************************* 
+     initialisation for run id 1519281251
+************************************************************* 
+-I- FairRunTimeDB::InitContainer() FairGeoParSet
+Container FairGeoParSet initialized from ROOT file.
+-I- FairRunTimeDB::InitContainer() FairBaseParSet
+Container FairBaseParSet initialized from ROOT file.
+[INFO   ] Creating mag.field container MagFieldParam 
+
+************************************************************* 
+     initialisation for run id 1519281251
+************************************************************* 
+-I- FairRunTimeDB::InitContainer() FairGeoParSet
+-I- FairRunTimeDB::InitContainer() FairBaseParSet
+-I- FairRunTimeDB::InitContainer() MagFieldParam
+Container MagFieldParam initialized from ROOT file.
+[INFO   ] MagFieldParam: 
+[INFO   ] Solenoid (+1.00*)5 kG, Dipole ON (+1.00)  
+[INFO   ] Machine B fields for p-p beam (7000 GeV): QGrad: 22.0002 Dipole: 37.8781 
+[INFO   ] Uses Sol30_Dip6_Hole of /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Common/maps/mfchebKGI_sym.root 
+[INFO   ] Total number of sensors 920 in 2 detector halves
+[INFO   ] Loading MFT L2G matrices from TGeo
+Alpide response object of 40500 matrices to map chagre in xyz to 5x5 pixels
+X(col) range: +0.000000e+00 : +1.462000e-03 | step: 5.000000e-05 | Nbins: 30
+Y(row) range: +0.000000e+00 : +1.344000e-03 | step: 5.000000e-05 | Nbins: 27
+Z(dpt) range: -2.000000e-03 : +2.500000e-03 | step: 8.999999e-05 | Nbins: 50
+[INFO   ] Creating branch for std::vector<o2::ITSMFT::Digit, std::allocator<o2::ITSMFT::Digit> > with address 0x730aa38
+FairRunAna::Run() After checking, the run will run from event 0 to 10.
+[INFO   ] Digitizing ITS event at time 3556.13 (TOffset= -2173.82 ROFrame= 0) cont.mode: 1 current Min/Max RO Frames 0/0
+[INFO   ] Digitizing ITS event at time 62365.2 (TOffset= -2173.82 ROFrame= 6) cont.mode: 1 current Min/Max RO Frames 0/0
+[INFO   ] Filling ITS digits output for RO frames 0:0
+[INFO   ] Filling ITS digits output for RO frames 1:1
+[INFO   ] Filling ITS digits output for RO frames 2:2
+[INFO   ] Filling ITS digits output for RO frames 3:3
+[INFO   ] Filling ITS digits output for RO frames 4:4
+[INFO   ] Filling ITS digits output for RO frames 5:5
+[INFO   ] Digitizing ITS event at time 67635.2 (TOffset= -2173.82 ROFrame= 6) cont.mode: 1 current Min/Max RO Frames 6/5
+[INFO   ] Digitizing ITS event at time 80905 (TOffset= -2173.82 ROFrame= 8) cont.mode: 1 current Min/Max RO Frames 6/5
+[INFO   ] Filling ITS digits output for RO frames 6:6
+[INFO   ] Filling ITS digits output for RO frames 7:7
+[INFO   ] Digitizing ITS event at time 144039 (TOffset= -2173.82 ROFrame= 14) cont.mode: 1 current Min/Max RO Frames 8/7
+[INFO   ] Filling ITS digits output for RO frames 8:8
+[INFO   ] Filling ITS digits output for RO frames 9:9
+[INFO   ] Filling ITS digits output for RO frames 10:10
+[INFO   ] Filling ITS digits output for RO frames 11:11
+[INFO   ] Filling ITS digits output for RO frames 12:12
+[INFO   ] Filling ITS digits output for RO frames 13:13
+[INFO   ] Digitizing ITS event at time 171311 (TOffset= -2173.82 ROFrame= 17) cont.mode: 1 current Min/Max RO Frames 14/13
+[INFO   ] Filling ITS digits output for RO frames 14:14
+[INFO   ] Filling ITS digits output for RO frames 15:15
+[INFO   ] Filling ITS digits output for RO frames 16:16
+[INFO   ] Digitizing ITS event at time 186843 (TOffset= -2173.82 ROFrame= 18) cont.mode: 1 current Min/Max RO Frames 17/16
+[INFO   ] Filling ITS digits output for RO frames 17:17
+[INFO   ] Digitizing ITS event at time 213778 (TOffset= -2173.82 ROFrame= 21) cont.mode: 1 current Min/Max RO Frames 18/17
+[INFO   ] Filling ITS digits output for RO frames 18:18
+[INFO   ] Filling ITS digits output for RO frames 19:19
+[INFO   ] Filling ITS digits output for RO frames 20:20
+[INFO   ] Digitizing ITS event at time 242313 (TOffset= -2173.82 ROFrame= 24) cont.mode: 1 current Min/Max RO Frames 21/20
+[INFO   ] Filling ITS digits output for RO frames 21:21
+[INFO   ] Filling ITS digits output for RO frames 22:22
+[INFO   ] Filling ITS digits output for RO frames 23:23
+[INFO   ] Digitizing ITS event at time 263807 (TOffset= -2173.82 ROFrame= 26) cont.mode: 1 current Min/Max RO Frames 24/23
+[INFO   ] Filling ITS digits output for RO frames 24:24
+[INFO   ] Filling ITS digits output for RO frames 25:25
+[INFO   ] Filling ITS digits output for RO frames 26:25
+
+
+<DartMeasurement name="MaxMemory" type="numeric/double">270.027</DartMeasurement>
+<DartMeasurement name="CpuLoad" type="numeric/double">0.931313</DartMeasurement>
+
+
+Macro finished succesfully
+
+
+Output file is AliceO2_TGeant3.digi_10ev_100mu.root
+Real time 2.25488 s, CPU time 2.1s
+
+
+====================================================================
+Output ROOT files:
+
+
+AliceO2_TGeant3.digi_10ev_100mu.root
+====================================================================
+
+3) clusterization:
+
+./run_clus_mft.sh 10 100 TGeant3
+
+
+
+
+==================================================================
+
+
+   ------------------------------------------------------------
+  | Welcome to ROOT 6.10/08                http://root.cern.ch |
+  |                               (c) 1995-2017, The ROOT Team |
+  | Built for linuxx8664gcc                                    |
+  | From tag v6-10-08, 16 October 2017                         |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q' |
+   ------------------------------------------------------------
+
+
+
+Macro finished succesfully.
+
+Processing SetIncludePath.C...
+Added 
+ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/ITS/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/Passive/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/ITS/simulation/inclu -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/TPC/simulation/include/  -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/TPC/simulation/include/  -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/TPC/simulation/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/Base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Common/Field/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Common/MathUtils/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/ITS/reconstruction/i -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/simulation/in -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/simulation/in -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/simulation/in -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/common/reconstructio -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/base/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/simulation/inclu -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/reconstruction/include/ -I/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Detectors/ITSMFT/MFT/reconstruction/include/
+ to include paths
+Processing run_clus_mft.C++(10,100,"TGeant3")...
+[INFO   ] FairRootManager::OpenOutFile("AliceO2_TGeant3.clus_10ev_100mu.root")
+[INFO   ] *********************************************************************
+[INFO   ] ATTENTION: YOU ARE RUNNING IN SPECIAL MODE OF STORING CLUSTER PATTERN
+[INFO   ] *********************************************************************
+[INFO   ] The input consists out of the following trees and files: 
+[INFO   ]  - o2sim
+[INFO   ]     - AliceO2_TGeant3.digi_10ev_100mu.root
+[INFO   ] Parameter and input file are available, Assure that basic info is there for the run!
+
+************************************************************* 
+     initialisation for run id 1519281251
+************************************************************* 
+-I- FairRunTimeDB::InitContainer() FairGeoParSet
+Container FairGeoParSet initialized from ROOT file.
+-I- FairRunTimeDB::InitContainer() FairBaseParSet
+Container FairBaseParSet initialized from ROOT file.
+[INFO   ] Creating mag.field container MagFieldParam 
+
+************************************************************* 
+     initialisation for run id 1519281251
+************************************************************* 
+-I- FairRunTimeDB::InitContainer() FairGeoParSet
+-I- FairRunTimeDB::InitContainer() FairBaseParSet
+-I- FairRunTimeDB::InitContainer() MagFieldParam
+Container MagFieldParam initialized from ROOT file.
+[INFO   ] MagFieldParam: 
+[INFO   ] Solenoid (+1.00*)5 kG, Dipole ON (+1.00)  
+[INFO   ] Machine B fields for p-p beam (7000 GeV): QGrad: 22.0002 Dipole: 37.8781 
+[INFO   ] Uses Sol30_Dip6_Hole of /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/share/Common/maps/mfchebKGI_sym.root 
+[INFO   ] Total number of sensors 920 in 2 detector halves
+[INFO   ] Loading MFT T2L matrices from TGeo
+[INFO   ] Creating branch for std::vector<o2::ITSMFT::Cluster, std::allocator<o2::ITSMFT::Cluster> > with address 0x685ba88
+Creating branch for o2::dataformats::MCTruthContainer<o2::MCCompLabel> with address 0x685ba90
+FairRunAna::Run() After checking, the run will run from event 0 to 11.
+
+
+<DartMeasurement name="MaxMemory" type="numeric/double">273.012</DartMeasurement>
+<DartMeasurement name="CpuLoad" type="numeric/double">0.967977</DartMeasurement>
+
+
+Macro finished succesfully
+
+
+Output file is AliceO2_TGeant3.clus_10ev_100mu.root
+Real time 1.69425 s, CPU time 1.64s
+
+
+
+==================================================================
+Output ROOT files:
+
+AliceO2_TGeant3.clus_10ev_100mu.root
+
+==================================================================
+
+
+4) check the digits:
+
+root.exe
+.x CheckDigits_mft.C+(10,100,"TGeant3")
+
+
+=================================================================
+
+
+root [0] .x CheckDigits_mft.C+(10,100,"TGeant3");
+Info in <TUnixSystem::ACLiC>: creating shared library /home/debasish/MFT/O2_jan2018/alice/O2/macro/work/./CheckDigits_mft_C.so
+In file included from /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/ROOT/v6-10-08-1/include/TNamed.h:25:0,
+                 from /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/ROOT/v6-10-08-1/include/TDictionary.h:44,
+                 from /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/ROOT/v6-10-08-1/include/TClass.h:24,
+                 from /home/debasish/MFT/O2_jan2018/alice/O2/macro/work/CheckDigits_mft_C_ACLiC_dict.cxx:13:
+/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/ROOT/v6-10-08-1/include/TObject.h:136:24: warning: 'virtual Int_t TObject::Write(const char*, Int_t, Int_t) const' was hidden [-Woverloaded-virtual]
+    virtual Int_t       Write(const char *name=0, Int_t option=0, Int_t bufsize=0) const;
+                        ^~~~~
+In file included from /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/FairRoot/alice-dev-20180110-1/include/FairMultiLinkedData_Interface.h:15:0,
+                 from /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/FairRoot/alice-dev-20180110-1/include/FairTimeStamp.h:11,
+                 from /home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/include/ITSMFTBase/Digit.h:23,
+                 from /home/debasish/MFT/O2_jan2018/alice/O2/macro/work/./CheckDigits_mft.C:15,
+                 from /home/debasish/MFT/O2_jan2018/alice/O2/macro/work/CheckDigits_mft_C_ACLiC_dict.cxx:40:
+/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/FairRoot/alice-dev-20180110-1/include/FairRootManager.h:209:25: warning:   by 'virtual Int_t FairRootManager::Write(const char*, Int_t, Int_t)' [-Woverloaded-virtual]
+     Int_t               Write(const char* name=0, Int_t option=0, Int_t bufsize=0);
+                         ^~~~~
+In file included from /home/debasish/MFT/O2_jan2018/alice/O2/macro/work/CheckDigits_mft_C_ACLiC_dict.cxx:40:0:
+/home/debasish/MFT/O2_jan2018/alice/O2/macro/work/./CheckDigits_mft.C: In function 'void CheckDigits_mft(Int_t, Int_t, TString)':
+/home/debasish/MFT/O2_jan2018/alice/O2/macro/work/./CheckDigits_mft.C:119:24: warning: 'zlc' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      locH.Z()-locD.Z());
+                        ^
+/home/debasish/MFT/O2_jan2018/alice/O2/macro/work/./CheckDigits_mft.C:119:24: warning: 'xlc' may be used uninitialized in this function [-Wmaybe-uninitialized]
+Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CountLevels>: max level = 7, max placements = 105
+Info in <TGeoManager::CloseGeometry>: 48180 nodes/ 23157 volume UID's in FAIR geometry
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+[INFO   ] Total number of sensors 920 in 2 detector halves
+[INFO   ] Loading MFT L2G matrices from TGeo
+ Open hits file AliceO2_TGeant3.mc_10ev_100mu.root
+ Open digits file AliceO2_TGeant3.digi_10ev_100mu.root
+Found 10 events with hits 
+Found 11 events with digits 
+nt has 0 entries
+noise digits 0
+=================================================================
+OutPut ROOT files:
+
+CheckDigits.root
+=================================================================
+
+5) check the clusters:
+
+root.exe
+.x CheckClusters_mft.C+(10,100,"TGeant3")
+
+
+=================================================================
+
+root [0] .x CheckClusters_mft.C+(10,100,"TGeant3")
+Info in <TUnixSystem::ACLiC>: creating shared library /home/debasish/MFT/O2_jan2018/alice/O2/macro/work/./CheckClusters_mft_C.so
+In file included from /home/debasish/MFT/O2_jan2018/alice/O2/macro/work/./CheckClusters_mft.C:19:0,
+                 from /home/debasish/MFT/O2_jan2018/alice/O2/macro/work/CheckClusters_mft_C_ACLiC_dict.cxx:40:
+/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/include/SimulationDataFormat/MCTruthContainer.h: In instantiation of 'gsl::span<ElementType, -1l> o2::dataformats::MCTruthContainer<TruthElement>::getLabels(int) [with TruthElement = o2::MCCompLabel]':
+/home/debasish/MFT/O2_jan2018/alice/O2/macro/work/./CheckClusters_mft.C:93:45:   required from here
+/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/include/SimulationDataFormat/MCTruthContainer.h:82:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(dataindex >= getIndexedSize()) return gsl::span<TruthElement>();
+        ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/include/SimulationDataFormat/MCTruthContainer.h: In instantiation of 'size_t o2::dataformats::MCTruthContainer<TruthElement>::getSize(int) const [with TruthElement = o2::MCCompLabel; size_t = long unsigned int]':
+/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/include/SimulationDataFormat/MCTruthContainer.h:83:88:   required from 'gsl::span<ElementType, -1l> o2::dataformats::MCTruthContainer<TruthElement>::getLabels(int) [with TruthElement = o2::MCCompLabel]'
+/home/debasish/MFT/O2_jan2018/alice/O2/macro/work/./CheckClusters_mft.C:93:45:   required from here
+/home/debasish/MFT/O2_jan2018/alice/sw/ubuntu1404_x86-64/O2/dev-1/include/SimulationDataFormat/MCTruthContainer.h:53:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     const auto size = (dataindex < mHeaderArray.size() - 1)
+                       ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CountLevels>: max level = 7, max placements = 105
+Info in <TGeoManager::CloseGeometry>: 48180 nodes/ 23157 volume UID's in FAIR geometry
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+[INFO   ] Total number of sensors 920 in 2 detector halves
+[INFO   ] Loading MFT L2G matrices from TGeo
+[INFO   ] Loading MFT T2L matrices from TGeo
+[INFO   ] Loading MFT T2G matrices from TGeo
+nt has 0 entries
+noise clusters 0
+=================================================================
+
+Output Root files:
+
+CheckClusters.root
+
+=================================================================
