@@ -1,0 +1,55 @@
+root [0] .x CheckClusters.C+(10,100,"TGeant3")
+Info in <TUnixSystem::ACLiC>: creating shared library /Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/./CheckClusters_C.so
+In file included from /Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/./CheckClusters.C:20:0,
+                 from /Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/CheckClusters_C_ACLiC_dict.cxx:40:
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h: In instantiation of 'gsl::span<ElementType, -1l> o2::dataformats::MCTruthContainer<TruthElement>::getLabels(int) [with TruthElement = o2::MCCompLabel]':
+/Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/./CheckClusters.C:93:45:   required from here
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h:83:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(dataindex >= getIndexedSize()) return gsl::span<TruthElement>();
+        ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h: In instantiation of 'size_t o2::dataformats::MCTruthContainer<TruthElement>::getSize(int) const [with TruthElement = o2::MCCompLabel; size_t = long unsigned int]':
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h:84:88:   required from 'gsl::span<ElementType, -1l> o2::dataformats::MCTruthContainer<TruthElement>::getLabels(int) [with TruthElement = o2::MCCompLabel]'
+/Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/./CheckClusters.C:93:45:   required from here
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h:54:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     const auto size = (dataindex < mHeaderArray.size() - 1)
+                       ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CountLevels>: max level = 7, max placements = 105
+Info in <TGeoManager::CloseGeometry>: 48180 nodes/ 23157 volume UID's in FAIR geometry
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+[INFO] Total number of sensors 920 in 2 detector halves 
+[INFO] Loading MFT L2G matrices from TGeo 
+[INFO] Loading MFT T2L matrices from TGeo 
+[INFO] Loading MFT T2G matrices from TGeo 
+nt has 7695 entries
+noise clusters 0 root [0] .x CheckClusters.C+(10,100,"TGeant3")
+Info in <TUnixSystem::ACLiC>: creating shared library /Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/./CheckClusters_C.so
+In file included from /Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/./CheckClusters.C:20:0,
+                 from /Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/CheckClusters_C_ACLiC_dict.cxx:40:
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h: In instantiation of 'gsl::span<ElementType, -1l> o2::dataformats::MCTruthContainer<TruthElement>::getLabels(int) [with TruthElement = o2::MCCompLabel]':
+/Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/./CheckClusters.C:93:45:   required from here
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h:83:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(dataindex >= getIndexedSize()) return gsl::span<TruthElement>();
+        ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h: In instantiation of 'size_t o2::dataformats::MCTruthContainer<TruthElement>::getSize(int) const [with TruthElement = o2::MCCompLabel; size_t = long unsigned int]':
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h:84:88:   required from 'gsl::span<ElementType, -1l> o2::dataformats::MCTruthContainer<TruthElement>::getLabels(int) [with TruthElement = o2::MCCompLabel]'
+/Data1/codes/dd/aliceo2/O2_2018/alice/O2/Detectors/ITSMFT/MFT/macros/./CheckClusters.C:93:45:   required from here
+/Data1/codes/dd/aliceo2/files/alice/sw/slc7_x86-64/O2/dev-2/include/SimulationDataFormat/MCTruthContainer.h:54:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     const auto size = (dataindex < mHeaderArray.size() - 1)
+                       ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CountLevels>: max level = 7, max placements = 105
+Info in <TGeoManager::CloseGeometry>: 48180 nodes/ 23157 volume UID's in FAIR geometry
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+[INFO] Total number of sensors 920 in 2 detector halves 
+[INFO] Loading MFT L2G matrices from TGeo 
+[INFO] Loading MFT T2L matrices from TGeo 
+[INFO] Loading MFT T2G matrices from TGeo 
+nt has 7695 entries
+noise clusters 0 
